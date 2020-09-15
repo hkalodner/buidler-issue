@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-const chai = require('chai')
+const { expect, use } = require('chai')
 const chaiAsPromised = require("chai-as-promised")
 const { solidity } = require('ethereum-waffle')
-chai.use(chaiAsPromised)
-chai.use(solidity)
-const { expect } = chai
+
+use(chaiAsPromised)
+use(solidity)
 
 describe('Test', () => {
   it('test should succeed', async function () {
