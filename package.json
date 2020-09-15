@@ -1,0 +1,20 @@
+{
+  "name": "buidler-issue",
+  "private": true,
+  "description": "",
+  "author": "Offchain Labs, Inc.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "buidler compile",
+    "test": "buidler test"
+  },
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.4.4",
+    "@nomiclabs/buidler-ethers": "^1.3.4",
+    "@nomiclabs/buidler-waffle": "^1.3.5",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "ethers": "^4.0.27",
+    "ethereum-waffle": "^2.3.0"
+  }
+}
