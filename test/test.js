@@ -16,10 +16,12 @@
 
 const chai = require('chai')
 const chaiAsPromised = require("chai-as-promised")
+const { solidity } = require('ethereum-waffle')
 chai.use(chaiAsPromised)
+chai.use(solidity)
 const { expect } = chai
 
-describe('Test1', () => {
+describe('Test', () => {
   it('test should succeed', async function () {
     const Test = await ethers.getContractFactory('Test')
     const test = await Test.deploy()
